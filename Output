@@ -1,0 +1,1 @@
+~$ gcc 19BCE2145_dining.c -o resultdining -lpthread
