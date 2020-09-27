@@ -76,7 +76,10 @@ void goForDinner(int philID){ //same like threads concept here cases implemented
 int main(){
 	for(i=0;i<n;i++)
         ForkAvil[i].taken=Philostatus[i].left=Philostatus[i].right=0;
- 
+	/* Observe here carefully, while loop will run until all philosophers complete dinner
+		Actually problem of deadlock occur only thy try to take at same time
+		This for loop will say that they are trying at same time. And remaining status will print by go for dinner function
+		*/
 	while(compltedPhilo<n){
 		
 		for(i=0;i<n;i++)
