@@ -72,3 +72,17 @@ void goForDinner(int philID){ //same like threads concept here cases implemented
                     }
         }else{}
 }
+ 
+int main(){
+	for(i=0;i<n;i++)
+        ForkAvil[i].taken=Philostatus[i].left=Philostatus[i].right=0;
+ 
+	while(compltedPhilo<n){
+		
+		for(i=0;i<n;i++)
+            goForDinner(i);
+		printf("\nTill now num of philosophers completed dinner are %d\n\n",compltedPhilo);
+	}
+ 
+	return 0;
+}
